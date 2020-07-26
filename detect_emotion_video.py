@@ -120,13 +120,13 @@ while True:
 		# display the label and bounding box rectangle on the output
 		# frame
 		if label == "happy":
-			#cv2.putText(original_frame, label, (startX, startY - 10),cv2.FONT_HERSHEY_SIMPLEX, 0.45,(0,200,50), 2)
+			cv2.putText(original_frame, label, (startX, startY - 10),cv2.FONT_HERSHEY_SIMPLEX, 0.45,(0,200,50), 2)
 			cv2.rectangle(original_frame, (startX, startY), (endX, endY),(0,200,50), 2)
 		elif label == "neutral":
-			#cv2.putText(original_frame, label, (startX, startY - 10),cv2.FONT_HERSHEY_SIMPLEX, 0.45,(255,255,255), 2)
+			cv2.putText(original_frame, label, (startX, startY - 10),cv2.FONT_HERSHEY_SIMPLEX, 0.45,(255,255,255), 2)
 			cv2.rectangle(original_frame, (startX, startY), (endX, endY),(255,255,255), 2)
 		elif label == "sad":
-			#cv2.putText(original_frame, label, (startX, startY - 10),cv2.FONT_HERSHEY_SIMPLEX, 0.45,(0,50,200), 2)
+			cv2.putText(original_frame, label, (startX, startY - 10),cv2.FONT_HERSHEY_SIMPLEX, 0.45,(0,50,200), 2)
 			cv2.rectangle(original_frame, (startX, startY), (endX, endY),(0,50,200), 2)
 		
 

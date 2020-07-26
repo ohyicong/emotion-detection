@@ -66,7 +66,7 @@ def detect_face(frame, faceNet,threshold=0.5):
 	return (locs)
 
 def capture_face_expression(face_expression,label,dataset_path):
-    if face_expression!=None:
+    if len(face_expression)!=0:
         dataset_folder = dataset_path+"\\"+label
         number_files = len(os.listdir(dataset_folder)) # dir is your directory path  
         image_path  = "%s\\%s_%d.jpg"%(dataset_folder,label,number_files)      
